@@ -22,7 +22,7 @@ int main() {
         input_chars.emplace_back(s[i], i);
     }
 
-    sort(input_chars.begin(), input_chars.end(), my_sort);
+    stable_sort(input_chars.begin(), input_chars.end(), my_sort);
 
     int row_number = n - 1;
     for (int counter = 0; counter < s.length(); counter++) {
